@@ -354,7 +354,6 @@ body {
     @include mq(sm) {
         width: 302px;
         height: 170px;
-        z-index: 30;
         margin-bottom: 30px;
     }
 
@@ -386,7 +385,6 @@ body {
     @include mq(sm) {
         width: 302px;
         height: 170px;
-        z-index: 30;
         margin-bottom: 30px;
     }
 }
