@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0, user-scalable=no,viewport-fit=cover">
+    <script src="https://cdn.jsdelivr.net/npm/viewport-extra@1.0.4/dist/viewport-extra.min.js"></script>
+    <!-- タブレット端末でのみ、PC向けデザインの最小幅をviewportの最小幅に設定 -->
+    <script>
+    (function(){
+    var ua = navigator.userAgent
+
+    var sp = ua.indexOf('iPhone') > -1 ||
+        (ua.indexOf('Android') > -1 && ua.indexOf('Mobile') > -1)
+
+    var tab = !sp && (
+        ua.indexOf('iPad') > -1 ||
+        (ua.indexOf('Macintosh') > -1 && 'ontouchend' in document) ||
+        ua.indexOf('Android') > -1
+    )
+
+    if (tab) new ViewportExtra(1024)
+    })()
+    </script>
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <title>宿泊プラン | 飯士館</title>
+    <meta name="description" content="「飯士館」は、新潟県南魚沼市の塩沢町、舞子高原の麓に位置する赤い屋根が目印のお宿です。
+    舞子スノーリゾートに近く、アウトドアやウィンタースポーツを楽しめます。
+    越後湯沢から車で10分。関越自動車道、塩沢石打ICから30秒とアクセス良好。">
+
+    <!-- reset.css -->
+    <link rel="stylesheet" href="/top.css/reset.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    <!-- wow -->
+    <script src="/js/wow.min.js"></script>
+    <!-- animate.css -->
+    <link rel="stylesheet" href="/top.css/animate.css">
+    <!-- original -->
+    <link rel="stylesheet" href="/plan.css/main.scss">
+    <link rel="stylesheet" href="/plan.css/main.css">
+    <script src="/js/script.js"></script>
+</head>
+<body class="drawer  drawer--right  drawer--navbarTopGutter">
+    <!-- header -->
+    <header class="drawer-navbar" id="js-header" role="banner">
+        <div class="drawer-container">
+            <div class="drawer-navbar-header">
+                <a class="drawer-brand" href="/index.html"><img src="/img/iijikan.svg" alt="飯士館のロゴ"></a>
+                <button type="button" class="drawer-toggle drawer-hamburger">
+                <span class="sr-only">toggle navigation</span>
+                <span class="drawer-hamburger-icon"></span>
+                </button>
+            </div>
+            <nav class="drawer-nav" role="navigation">
+                <ul class="drawer-menu  drawer-menu--right">
+                <li><a class="drawer-menu-item" href="/index.html">飯士館について</a></li>
+                <li><a class="drawer-menu-item" href="#plan">宿泊プラン</a></li>
+                <li><a class="drawer-menu-item" href="/facilities.html">施設案内</a></li>
+                <li><a class="drawer-menu-item" href="#access">アクセス</a></li>
+                <li><a class="drawer-menu-item" href="/index.html#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<main role="main">
+<!-- top -->
+    <section class="top" id="plan">
+        <div class="top-img">
+            <div class="top-title">
+                <h2>plan</h2>
+            </div>
+        </div>
+    </section>
+
+<!-- about -->
+    <section class="about">
+        <div class="inner">
+            <p class="about-text">
+                飯士館では、通常プラン（1泊2食付き）朝食付きプラン <br>
+                素泊まりのプランをご用意致しております。<br>
+                団体様もご要望を承りますので、お気軽にお問い合わせ下さい。  
+            </p>
+            <ul class="content">
+                <li><img src="/img/451254CB-5388-4D40-9F11-364CFA01F6D5.jpg" alt=""></li>
+                <li><img src="/img/D33B179F-791C-4A1F-95D0-1C53BB8C4432.jpg" alt=""></li>
+                <li><img src="/img/IMG_6526.jpg" alt=""></li>
+            </ul>
+        </div>
+    </section>
+
+<!-- plan -->
+    <section class="plan">
+        <!-- <div class="inner"> -->
+            <div class="price-text">
+                <p class="precautions">
+                    ※大人（中学生以上）こども（3才〜小学生）幼児（0〜2才）<br>
+                    ※上記宿泊料金に別途消費税10％がかかります。<br>
+                    ※幼児のお食事はご希望であれば、プレートをおつけ致します。<br>
+                    ※現金のみの対応となっております。
+                </p>
+            </div>
+            <div class="table-inner">
+                <table class="plan-table">
+                    <tbody>
+                        <!-- plan -->
+                        <tr>
+                            <th scope="col">内容</th>
+                            <th scope="col"></th>
+                            <th scope="col">大人</th>
+                            <th scope="col">こども</th>
+                            <th scope="col">幼児</th>
+                        </tr>
+                        <!-- 1泊２食 -->
+                        <tr class="weekday">
+                            <td rowspan=2>
+                                1泊2食付き<br>
+                                <span class="att">（ 朝・夕食付き ）</span>
+                            </td>
+                            <td>平日</td>
+                            <td>6,500~</td>
+                            <td>6,800~</td>
+                            <td>2,000~</td>
+                        </tr>
+                        <tr class="weekend">
+                            <td>週末</td>
+                            <td>7,500~</td>
+                            <td>7,500~</td>
+                            <td>2,500~</td>
+                        </tr>
+                        <!-- 朝食付き -->
+                        <tr class="weekday">
+                            <td rowspan=2>
+                                1泊1食付き<br>
+                                <span class="att">（ 朝食付き ）</span>
+                            </td>
+                            <td>平日</td>
+                            <td>7,000~</td>
+                            <td>6,000~</td>
+                            <td>2,000~</td>
+                        </tr>
+                        <tr class="weekend">
+                            <td>週末</td>
+                            <td>7,500~</td>
+                            <td>7,000~</td>
+                            <td>2,500~</td>
+                        </tr>
+                        <!-- 素泊まり -->
+                        <tr class="weekday">
+                            <td rowspan=2>
+                                素泊まり<br>
+                                <span class="att">（ 食事なし ）</span>
+                            </td>
+                            <td>平日</td>
+                            <td>5,500~</td>
+                            <td>5,000~</td>
+                            <td>2,000~</td>
+                        </tr>
+                        <tr class="weekend">
+                            <td>週末</td>
+                            <td>6,500~</td>
+                            <td>5,500~</td>
+                            <td>2,500~</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        <!-- </div> -->
+    </section>
+
+<!-- other -->
+    <section class="other">
+        <div class="other-inner">
+            <h2>キャンセルについて</h2>
+            <p>
+                ご予約後のキャンセルや内容変更等関しましては<br>
+                直接お電話にてご連絡をお願いします。<br>
+                船や航空便の欠航・天候事情等以外のお客様ご都合による<br>
+                不泊の場合にはキャンセル料が発生する場合がございます。
+            </p>
+        </div>
+    </section>
+
+<!-- reserve -->
+<section class="reserve">
+    <div class="inner">
+        <div class="reserve-wrap">
+            <h2 class="reserve-title">ご予約</h2>
+            <div class="form">
+                <a href="tel:025-783-2832" class="tel-number">
+                    <i class="fas fa-phone-alt fa-lg" style="color: #AD9F8A;"></i>025-783-2832
+                </a>
+                <a href="mailto:iiijikan1057@gmail.com?subject=問い合わせ&amp;body=" class="mail-address">
+                    <i class="fas fa-envelope fa-lg" style="color: #AD9F8A;"></i>iijikan1057@gmail.com
+                </a>
+            </div>
+            <div class="reception">
+                受付時間 9:00〜21:00
+            </div> 
+            <div class="contact-text">
+                ※夜21時以降の電話でのお問い合わせはご遠慮ください。<br>
+                ※メールではお名前・住所・電話番号などのご連絡先、<br>
+                ご宿泊予定日・人数を必ず明記してお送りください。
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- access -->
+<section class="access" id="access">
+    <div class="inner">
+        <div class="access-title">
+            <h2 class="access-title">アクセス</h2>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1593.3683472896605!2d138.8204530564582!3d36.99221777990937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff5f85a55ab261f%3A0xc6a2a4ef66baf6f4!2z6aOv5aOr6aSo!5e0!3m2!1sja!2sjp!4v1606571404265!5m2!1sja!2sjp" 
+            width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <a class="btn-2" href="https://goo.gl/maps/BZx78H3ux8SFiudd9" target="_blank" rel="noopener noreferrer">Google Mapで見る</a>
+        <div class="address">
+            <i class="fas fa-map-marker-alt fa-lg" style="color: #AD9F8A;"></i>〒949-6425  新潟県南魚沼市姥島新田221-6
+        </div>
+        <ul class="access-list">
+            <li class=""><i class="fas fa-car fa-lg" style="color: #AD9F8A;"></i>関越自動車道 塩沢石打ICから30秒</li>
+            <li class=""><i class="fas fa-parking fa-lg" style="color: #AD9F8A;"></i>駐車場無料</li>
+        </ul>
+        <div class="access-text">
+            団体様もご要望を承りますので、お気軽にお問い合わせ下さい。
+        </div>
+    </div>
+</section>
+</main>
+<!-- footer -->
+<footer>
+    <div class="inner">
+        <img class="footer-logo" src="/img/iijikan.svg" alt="飯士館のロゴ">
+        <ul class="footer-menu">
+            <li><a class="drawer-menu-item" href="/index.html">飯士館について</a></li>
+            <li><a class="drawer-menu-item" href="#plan">宿泊プラン</a></li>
+            <li><a class="drawer-menu-item" href="/facilities.html">施設案内</a></li>
+            <li><a class="drawer-menu-item" href="#access">アクセス</a></li>
+            <li><a class="drawer-menu-item" href="#contact">お問い合わせ</a></li>
+        </ul>
+        <p class="copyright"><small lang="en">Copyright(c) 飯士館 All Rights Reserved.</small></p>
+    </div>
+</footer>
+</body>
+</html>

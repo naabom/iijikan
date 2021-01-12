@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0, user-scalable=no,viewport-fit=cover">
+    <script src="https://cdn.jsdelivr.net/npm/viewport-extra@1.0.4/dist/viewport-extra.min.js"></script>
+    <!-- タブレット端末でのみ、PC向けデザインの最小幅をviewportの最小幅に設定 -->
+    <script>
+    (function(){
+    var ua = navigator.userAgent
+
+    var sp = ua.indexOf('iPhone') > -1 ||
+        (ua.indexOf('Android') > -1 && ua.indexOf('Mobile') > -1)
+
+    var tab = !sp && (
+        ua.indexOf('iPad') > -1 ||
+        (ua.indexOf('Macintosh') > -1 && 'ontouchend' in document) ||
+        ua.indexOf('Android') > -1
+    )
+
+    if (tab) new ViewportExtra(1024)
+    })()
+    </script>
+    
+    <link rel="shortcut icon" href="/favicon.ico">
+    <title>飯士館 | 塩沢舞子高原の宿</title>
+    <meta name="description" content="「飯士館」は、新潟県南魚沼市の塩沢町、舞子高原の麓に位置する赤い屋根が目印のお宿です。
+    舞子スノーリゾートに近く、アウトドアやウィンタースポーツを楽しめます。
+    越後湯沢から車で10分。関越自動車道、塩沢石打ICから30秒とアクセス良好。">
+
+    <!-- reset.css -->
+    <link rel="stylesheet" href="/top.css/reset.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha256-UzFD2WYH2U1dQpKDjjZK72VtPeWP50NoJjd26rnAdUI=" crossorigin="anonymous" />
+    <!-- drawer.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/css/drawer.min.css">
+    <!-- jquery & iScroll -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.2.0/iscroll.min.js"></script>
+    <!-- drawer.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.2.2/js/drawer.min.js"></script>
+    <!-- wow -->
+    <script src="/js/wow.min.js"></script>
+    <!-- animate.css -->
+    <link rel="stylesheet" href="/top.css/animate.css">
+    <!-- original -->
+    <link rel="stylesheet" href="/top.css/main.scss">
+    <link rel="stylesheet" href="/top.css/main.css">
+    <script src="/js/script.js"></script>
+</head>
+<body class="drawer  drawer--right  drawer--navbarTopGutter">
+<!-- header -->
+    <header class="drawer-navbar" id="js-header" role="banner">
+        <div class="drawer-container">
+            <div class="drawer-navbar-header">
+                <a class="drawer-brand" href="/index.html"><img src="/img/iijikan.svg" alt="飯士館のロゴ"></a>
+                <button type="button" class="drawer-toggle drawer-hamburger">
+                <span class="sr-only">toggle navigation</span>
+                <span class="drawer-hamburger-icon"></span>
+                </button>
+            </div>
+            <nav class="drawer-nav" role="navigation">
+                <ul class="drawer-menu  drawer-menu--right">
+                <li><a class="drawer-menu-item" href="/about.html">飯士館について</a></li>
+                <li><a class="drawer-menu-item" href="/plan.html">宿泊プラン</a></li>
+                <li><a class="drawer-menu-item" href="/facilities.html">施設案内</a></li>
+                <li><a class="drawer-menu-item" href="#access">アクセス</a></li>
+                <li><a class="drawer-menu-item" href="#contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<main role="main">
+<!-- top -->
+        <div class="top-img">
+                <img class="pc" src="/img/top.JPG" alt="パソコン用の画像">
+                <img class="sp" src="/img/IMG_6570.jpg" alt="">
+        </div>
+        <div class="top-text">
+            大自然の中のリゾートハウス<br>
+            飯士館へようこそ！
+        </div>
+
+<!-- about -->
+    <section class="about">
+        <div class="inner">
+            <div class="about-title">
+                <h2>ABOUT</h2>
+                <h3>飯士館について</h3>
+            </div>
+            <p class="about-text">
+                飯士館は塩沢、舞子高原の麓に位置する<br class="is-sp">赤い屋根が目印のお宿です。<br>
+                越後湯沢から車で10分。<br class="is-sp">塩沢石打ICから30秒とアクセス抜群です。<br>
+                舞子スノーリゾートにもアクセスが良く、<br>
+                夏はアウトドアアクティビティ。<br class="is-sp">冬はウィンタースポーツを楽しめます。<br>
+                アクティビティはもちろん、<br class="is-sp">出張やビジネスでのご利用も歓迎です。<br>
+                田舎ならではのゆったりとした時間を<br class="is-sp">飯士館でお過ごしください。<br>
+            </p>
+            <div class="about-img-wrap">
+                <img class="about-img" src="/img/IMG_6573.jpg" alt="">
+            </div>
+            <a class="btn" href="/about.html">more</a>
+        </div>
+    </section>
+
+<!-- plan -->
+    <section class="plan">
+        <div class="inner">
+            <div class="plan-title">
+                <h2>PLAN</h2>
+                <h3>宿泊プラン</h3>
+            </div>
+            <ul class="content">
+                <li><img src="/img/451254CB-5388-4D40-9F11-364CFA01F6D5.jpg" alt=""></li>
+                <li><img src="/img/D33B179F-791C-4A1F-95D0-1C53BB8C4432.jpg" alt=""></li>
+                <li><img src="/img/IMG_6526.jpg" alt=""></li>
+            </ul>
+            <p class="plan-text">
+                飯士館では、通常プラン（1泊2食付き）<br class="is-sp"> 朝食付きプラン<br>
+                素泊まりのプランを<br class="is-sp">ご用意致しております。
+            </p>
+            <a class="btn" href="/plan.html">more</a>
+        </div>
+    </section>
+
+<!-- facilities -->
+    <section class="facilities">
+        <div class="inner">
+            <div class="facilities-title">
+                <h2>facilities</h2>
+                <h3>施設案内</h3>
+            </div>
+            <img class="facilities-img" src="/img/F77A03C6-1011-470B-8B4B-F82E89A7BCB1.JPEG" alt="">
+            <p class="facilities-text">
+                飯士館の施設案内です。<br>
+                当館でゆったりとした時間を<br class="is-sp">ごくつろぎください。
+            </p>
+            <a class="btn" href="/facilities.html">more</a>
+        </div>
+    </section>
+
+<!-- contact -->
+    <section class="contact" id="contact">
+        <div class="inner">
+            <div class="contact-title">
+                <h2>CONTACT</h2>
+                <h3>お問い合わせ</h3>
+            </div>
+            <div class="form">
+                <a href="tel:025-783-2832" class="tel-number">
+                    <i class="fas fa-phone-alt fa-lg" style="color: #AD9F8A;"></i>025-783-2832
+                </a>
+                <a href="mailto:iiijikan1057@gmail.com?subject=問い合わせ&amp;body=" class="mail-address">
+                    <i class="fas fa-envelope fa-lg" style="color: #AD9F8A;"></i>iijikan1057@gmail.com
+                </a>
+            </div>
+            <div class="reception">
+                受付時間 9:00〜21:00
+            </div> 
+            <div class="contact-text">
+                ※夜21時以降の電話でのお問い合わせはご遠慮ください。<br>
+                ※メールではお名前・住所・電話番号などのご連絡先、<br>
+                ご宿泊予定日・人数を必ず明記してお送りください。
+            </div>
+        </div>
+    </section>
+
+<!-- access -->
+    <section class="access" id="access">
+        <div class="inner">
+            <div class="access-title">
+                <h2>ACCESS</h2>
+                <h3>アクセス</h3>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1593.3683472896605!2d138.8204530564582!3d36.99221777990937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5ff5f85a55ab261f%3A0xc6a2a4ef66baf6f4!2z6aOv5aOr6aSo!5e0!3m2!1sja!2sjp!4v1606571404265!5m2!1sja!2sjp" 
+                width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <a class="btn-2" href="https://goo.gl/maps/BZx78H3ux8SFiudd9" target="_blank" rel="noopener noreferrer">Google Mapで見る</a>
+            <div class="address">
+                <i class="fas fa-map-marker-alt fa-lg" style="color: #AD9F8A;"></i>〒949-6425  新潟県南魚沼市姥島新田221-6
+            </div>
+            <ul class="access-list">
+                <li class=""><i class="fas fa-car fa-lg" style="color: #AD9F8A;"></i>関越自動車道 塩沢石打ICから30秒</li>
+                <li class=""><i class="fas fa-parking fa-lg" style="color: #AD9F8A;"></i>駐車場無料</li>
+            </ul>
+            <div class="access-text">
+                団体様もご要望を承りますので、お気軽にお問い合わせ下さい。
+            </div>
+        </div>
+    </section>
+</main>
+
+<!-- footer -->
+    <footer>
+        <div class="inner">
+            <img class="footer-logo" src="/img/iijikan.svg" alt="飯士館のロゴ">
+            <ul class="footer-menu">
+                <li><a class="drawer-menu-item" href="/about.html">飯士館について</a></li>
+                <li><a class="drawer-menu-item" href="/plan.html">宿泊プラン</a></li>
+                <li><a class="drawer-menu-item" href="/facilities.html">施設案内</a></li>
+                <li><a class="drawer-menu-item" href="#access">アクセス</a></li>
+                <li><a class="drawer-menu-item" href="#contact">お問い合わせ</a></li>
+            </ul>
+            <p class="copyright"><small lang="en">Copyright(c) 飯士館 All Rights Reserved.</small></p>
+        </div>
+    </footer>
+</body>
+</html>
