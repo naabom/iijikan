@@ -371,7 +371,6 @@ body {
   .img-left {
     width: 302px;
     height: 170px;
-    z-index: 30;
     margin-bottom: 30px;
   }
 }
@@ -403,7 +402,6 @@ body {
   .img-right {
     width: 302px;
     height: 170px;
-    z-index: 30;
     margin-bottom: 30px;
   }
 }
