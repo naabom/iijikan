@@ -165,7 +165,7 @@ h2::after {
 }
 
 h3 {
-  font-family: 'ヒラギノ丸ゴ ProN';
+  font-family: 'ヒラギノ丸ゴ ProN','Montserrat','Yu Gothic',sans-serif;
   position: relative;
   padding-top: 20px;
   text-align: center;
