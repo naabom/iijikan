@@ -152,6 +152,7 @@ h2::after {
   width: 25px;
   height: 2px;
   background: #707070;
+  z-index: 1;
 }
 
 h2::before {
