@@ -155,11 +155,13 @@ h2::after {
 
 h2::before {
   margin-right: 10px;
+  z-index: -1;
   transform: rotate(60deg);
 }
 
 h2::after {
   margin-left: 10px;
+  z-index: -1;
   transform: rotate(-60deg);
 }
 
@@ -169,7 +171,6 @@ h3 {
   padding-top: 20px;
   text-align: center;
   font-size: 14px;
-  z-index: 20;
 }
 
 @media screen and (max-width: 767px) {
