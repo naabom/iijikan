@@ -136,6 +136,7 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1; 
   font-size: 28px;
 }
 
@@ -150,7 +151,6 @@ h2::after {
   content: '';
   width: 25px;
   height: 2px;
-  z-index: 3;
   background: #707070;
 }
 
@@ -170,6 +170,7 @@ h3 {
   padding-top: 20px;
   text-align: center;
   font-size: 14px;
+  z-index: 2;
 }
 
 @media screen and (max-width: 767px) {
