@@ -131,7 +131,7 @@ body {
 
 /* 見出し */
 h2 {
-  font-family:　'Montserrat','Yu Gothic',sans-serif;
+  font-family:　'Capriola','Montserrat','Yu Gothic',sans-serif;
   position: relative;
   display: flex;
   justify-content: center;
@@ -149,16 +149,18 @@ h2 {
 h2::before,
 h2::after {
   content: '';
-  width: 30px;
+  width: 25px;
   height: 2px;
   background: #707070;
 }
 
 h2::before {
+  margin-right: 10px;
   transform: rotate(60deg);
 }
 
 h2::after {
+  margin-left: 10px;
   transform: rotate(-60deg);
 }
 
