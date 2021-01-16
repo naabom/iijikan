@@ -362,7 +362,7 @@ body {
     width: 425px;
     height: 300px;
     border-radius: 20px;
-    background-color: gray;
+    object-fit: cover;
 
     @include mq(sm) {
         width: 302px;
